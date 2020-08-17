@@ -14,7 +14,7 @@ class Response
             extract($data);
 
         $view = str_replace('.', '/', $view);
-        return require_once __DIR__ . '/../../../app/Views/' . $view . '.php';
+        return require_once VIEW_PATH . $view . '.php';
     }
 
     public static function json($json)
